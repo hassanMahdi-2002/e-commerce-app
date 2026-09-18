@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# 🛒 FreshCart
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive E-Commerce front-end built with React — product browsing, dynamic product pages, authentication forms, and a full shopping cart with persistent state.
 
-## Available Scripts
+![FreshCart Home](./Vimage/home.png)
+![FreshCart Cart](./Vimage/cart.png)
+![FreshCart details](./Vimage/desc.png)
 
-In the project directory, you can run:
+## 🔗 Live Demo
 
-### `npm start`
+[View Live](#) <!-- Replace with your Vercel/Netlify link -->
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ✨ Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Shopping cart** — add items, increment/decrement quantities (auto-removal at zero), delete items, and live calculation of subtotal, shipping, and total.
+- **Persistent state** — cart data is stored in LocalStorage and restored on reload.
+- **Global state** — cart logic centralized in a Context API provider, consumed across the app.
+- **SPA routing** — `react-router-dom` v6 with `createBrowserRouter`, covering Home, Brands, Product Details, Cart, Login, Register, and a custom 404 page.
+- **Dynamic product pages** — product data resolved from the URL via `useParams`.
+- **Form validation** — Formik-powered Login and Register forms with real-time feedback, Egyptian phone-number validation, email format checks, and password confirmation.
+- **Responsive design** — mobile-first Bootstrap 5 grid with custom CSS for hover states and transitions.
 
-### `npm test`
+## 🛠️ Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+| Category | Tools |
+|---|---|
+| Core | React 18, JavaScript (ES6+), HTML5, CSS3 |
+| Routing | React Router DOM v6 |
+| State | React Context API |
+| Forms | Formik |
+| HTTP | Axios |
+| UI | Bootstrap 5, FontAwesome, Custom CSS |
 
-### `npm run build`
+Authentication requests are sent to mock APIs (`reqres.in`, `jsonplaceholder`) to simulate backend communication.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📂 Project Structure
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+src/
+├── Components/ # UI components (Home, Cart, Navbar, Login, Register, ...)
+├── Context/ # CartContext.jsx — global cart state
+├── dummyData/ # Local JSON data for brands and products
+├── Layout/ # Shared wrapper (Navbar + Footer)
+└── App.js # Router configuration
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## ⚙️ Running Locally
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+git clone https://github.com/hassanmahdi-2002/e-commerce-app.git
+cd e-commerce-app
+npm install
+npm start
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The app runs on `http://localhost:3000`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🚧 Roadmap
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- [ ] Connect to a real backend API
+- [ ] Wishlist and product search
+- [ ] Checkout flow
 
-## Learn More
+## 📬 Contact
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Hassan Mahdi Hassan Diab** — [LinkedIn](www.linkedin.com/in/hassan-mahdi-82b748352) · [Email](hassanmahdi102002.com)
