@@ -37,9 +37,13 @@ Authentication requests are sent to mock APIs (`reqres.in`, `jsonplaceholder`) t
 
 src/
 ├── Components/ # UI components (Home, Cart, Navbar, Login, Register, ...)
+
 ├── Context/ # CartContext.jsx — global cart state
+
 ├── dummyData/ # Local JSON data for brands and products
+
 ├── Layout/ # Shared wrapper (Navbar + Footer)
+
 └── App.js # Router configuration
 
 
