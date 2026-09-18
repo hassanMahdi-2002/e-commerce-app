@@ -1,0 +1,13 @@
+.brand-card {
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.brand-card:hover {
+    transform: translateY(-5px); 
+}
+
+
+.brand-card:hover img {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2) !important;
+}
